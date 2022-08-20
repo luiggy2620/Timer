@@ -1,8 +1,92 @@
 * {
 	padding: 0;
 	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
 }
 
 body {
-	font-family: 'Special Elite', cursive;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Roboto', sans-serif;
+	background-image: linear-gradient(to right top, #f27bbf, #d395ea, #a7afff, #7cc4ff, #6ad4fe, #56d2fb, #3bd0f8, #00cef4, #00bbff, #00a5ff, #0089ff, #5f66fb);
 }
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	max-width: 800px;
+	margin: auto;
+}
+
+.clock {
+	display: flex;
+	font-size: 200%;
+	text-shadow: -1px 0 15px rgb(0, 0, 0, .25);
+	color: lightgray;
+	width: 70%;
+}
+
+.number {
+	width: 25%;
+	text-align: center;
+
+	font-family: 'Roboto', sans-serif;
+	border: none;
+	background: transparent;
+	font-size: 200%;
+	color: #fff;
+}
+
+.clock span {
+	width: 25%;
+	text-align: center;
+
+	font-family: 'Roboto', sans-serif;
+	border: none;
+	background: transparent;
+	font-size: 200%;
+	color: #fff;
+}
+
+
+.buttons button {
+	margin: 10px 7px;
+	border: none;
+	border-radius: 50%;
+	padding: 30px;
+	background: #fff;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+#play {
+	background-image: url(../img/play.png);
+}
+
+#stop {
+	background-image: url(../img/stop.png);
+}
+
+#play:active {
+	background-color: lightgreen;
+}
+
+#stop:active {
+	background-color: lightpink;
+}
+
+#play:hover, #stop:hover{
+	background-color: #333;
+}
+

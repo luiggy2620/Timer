@@ -3,23 +3,41 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>Timer Web</title>
 </head>
 
 <body>
 	<div class="container">
 
-		<div class="timer">
-			<input class="number" type="text" maxlength="2" value="00"> <span>hs</span>
-			<input class="number" type="text" maxlength="2" value="00"> <span>min</span>
-			<input class="number" type="text" maxlength="2" value="00"> <span>seg</span>
+		<div class="clock">
+			<input class="number" type="text" maxlength="2" value="00"><span>:</span>
+			<input class="number" type="text" maxlength="2" value="00"><span>:</span>
+			<input class="number" type="text" maxlength="2" value="00">
 		</div>
 
 		<div class="buttons">
-			<button id="play" onclick="startTimer()"></button>
-			<button id="stop" onclick="stopTimer()"></button>
+			<button id="play" onclick="startTimer();"></button>
+			<button id="stop" onclick="stopTimer();"></button>
 		</div>
 
 	</div>
+
+	<!-- <div class="container">
+        <div class="clock">
+            <input class="number" type="text" maxlength="2" value="00"><span>hs</span>
+            <input class="number" type="text" maxlength="2" value="00"><span>min</span>
+            <input class="number" type="text" maxlength="2" value="00"><span>sec</span>
+        </div>
+        <div class="buttons">
+            <button id="play" onclick="startTimer()"></button>
+            <button id="stop" onclick="stopTimer()"></button>
+        </div>
+    </div> -->
+    <script src="js/timer.js"></script>
+
 </body>
 </html>
